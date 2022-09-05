@@ -4,8 +4,10 @@
 # 猜錯的話 印出 "比答案大/小"
 
 import random
+start = int(input("請決定隨機數字範圍起始值: "))
+end = int(input("請決定隨機數字範圍結束值: "))
  
-r = random.randint(1, 100)
+r = random.randint(start, end)
 count = 0
 while True:
 	count += 1
